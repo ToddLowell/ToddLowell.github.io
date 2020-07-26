@@ -1,0 +1,188 @@
+/////////////////////////
+// Navbar
+.navbar {
+    width: 8rem;
+    height: 100vh;
+    position: fixed;
+    background-color: var(--bg-secondary);
+    display: flex;
+    flex-direction: column;
+    transition: width 200ms ease;
+    z-index: 100;
+
+    @media only screen and (max-width: $bp-phone) {
+        bottom: 0;
+        width: 100vw;
+        height: 8rem;
+    }
+
+    &__nav {
+        flex: 1;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media only screen and (max-width: $bp-phone) {
+            flex-direction: row;
+            justify-content: space-evenly;
+        }    
+    }
+
+    &__icon {
+        width: 5rem;
+        height: 5rem;
+        min-width: 3rem;
+        margin-left: 1.5rem;
+        fill: currentColor;
+
+        @media only screen and (max-width: $bp-phone) {
+            margin-left: 0rem;
+        }  
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        flex: 1;
+        color: var(--bg-primary);
+        transition: all .2s;
+
+        @media only screen and (max-width: $bp-phone) {
+            display: flex;
+            justify-content: center;
+        }  
+    }
+
+    &__text {
+        display: none;
+        margin-left: 1.5rem;
+        font-weight: 600;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 8rem;
+        
+        &:last-child {
+            margin-top: auto;
+
+            @media only screen and (max-width: $bp-phone) {
+                margin-top: none;
+            }  
+        }
+    }
+
+    &__link {
+        &:hover {
+            color: var(--color-primary);
+        }
+    }
+
+    &:hover {
+        width: 17rem;
+
+        @media only screen and (max-width: $bp-phone) {
+            width: 100vw;
+        } 
+    }
+
+    &:hover &__text {
+        display: block;
+
+        @media only screen and (max-width: $bp-phone) {
+            display: none;
+        } 
+    }
+}
+
+/////////////////////////
+// Legal
+.legal {
+    color: var(--text-primary);
+    font-size: 1.2rem;
+    // text-align: center;
+    // padding: 2.5rem;
+    // margin-top: auto;
+}
+
+/////////////////////////
+// Logo
+.logo {
+    margin: 1.5rem 0;
+    margin-bottom: 0rem;
+    background: var(--color-black);
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--color-primary);
+
+    @media only screen and (max-width: $bp-phone) {
+        display: none;
+    }
+
+    &__text {
+        font-weight: 500;
+        letter-spacing: 0.1ch;
+        text-align: center;
+        color: var(--color-primary);
+
+        display: none;
+        // transition: display 10s;
+    }
+    
+    &__box {
+        margin-left: 1rem;
+        width: 5rem;
+        // display: none;
+    }
+}
+
+.navbar:hover .logo__text {
+    display: block;
+} 
+
+/////////////////////////
+// Landing List
+.landing-list {
+    text-transform: uppercase;
+
+    &__link {
+        text-decoration: none;
+        flex: 1;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:link, &:visited {
+            color: inherit;
+        }
+    
+        &:hover {
+            // background-color: rgba($color: var(--color-primary), $alpha: 1.0);
+            background-color: rgba(255, 0, 0, 0.3);
+        }
+    
+        &:active {
+        }
+
+        @media only screen and (max-width: $bp-portrait) {
+            flex: 1;
+            width: 100%;
+            padding-bottom: 1.5rem;
+        }
+    }
+
+    &__point {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 5rem;
+    }
+
+    &__point h2 {
+        font-size: 8rem;
+    }
+}

@@ -1,0 +1,36 @@
+:root {
+    --text-primary: #f4f2f2;
+    --bg-primary: #545454;
+    --bg-secondary: #141418;
+
+    --color-primary: #47ffff;
+    --color-primary-light: #93ffff;
+
+    --color-secondary: #04fcca;
+
+    --color-black: #1e1e24;
+}
+
+$bp-portrait: 62.5em; //1000px
+$bp-phone: 37.5rem; //600px
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: var(--text-primary);
+
+    background-color: var(--bg-primary);
+}
