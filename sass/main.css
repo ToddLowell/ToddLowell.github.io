@@ -15,6 +15,22 @@ Grey dark 2: #777
 Grey dark 3: #999
 
 */
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.align-center {
+  text-align: center;
+}
+
+.mg-bt-sm {
+  margin-bottom: 1rem;
+}
+
 :root {
   --text-primary: #f4f2f2;
   --bg-primary: #545454;
@@ -97,14 +113,6 @@ main {
   }
 }
 
-.center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
 .footer {
   margin-left: 8rem;
   padding: 2rem 2rem;
@@ -137,6 +145,14 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
   background: var(--color-primary);
+}
+
+.error404 {
+  background-image: url(../img/bg-error404.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
 
 .navbar {
@@ -378,6 +394,37 @@ body::-webkit-scrollbar-thumb {
   font-size: 8rem;
 }
 
+.btn {
+  border: none;
+  background-color: #68c950;
+  color: var(--text-primary);
+  padding: 1rem 2.5rem;
+  border-radius: 5px;
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 2rem;
+  position: absolute;
+  right: 0;
+}
+
+.btn:link, .btn:visited {
+  color: var(--text-primary);
+}
+
+.btn:hover {
+  background: #469c30;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  background: #469c30;
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+}
+
 .heading__jumbo {
   text-align: center;
   text-transform: uppercase;
@@ -410,5 +457,9 @@ body::-webkit-scrollbar-thumb {
 .about {
   margin-top: 2rem;
   text-align: center;
+}
+
+.paragraph {
+  line-height: 1.6;
 }
 /*# sourceMappingURL=main.css.map */

@@ -186,3 +186,35 @@
         font-size: 8rem;
     }
 }
+
+/////////////////////////
+// Button
+.btn {
+    border: none;
+    background-color: #68c950;
+    color: var(--text-primary);
+    padding: 1rem 2.5rem;
+    border-radius: 5px;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 2rem;
+    position: absolute;
+    right: 0;
+
+    &:link, &:visited {
+        color: var(--text-primary);
+    }
+
+    &:hover {
+        background: #469c30;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &:active {
+        background: #469c30;
+        transform: translateY(5px);
+    }
+}

@@ -1,3 +1,5 @@
+/////////////////////////
+// Landing Page
 
 main {
     margin-left: 8rem;
@@ -41,10 +43,6 @@ main {
     }
 }
 
-.center {
-    @include absCenter;
-}
-
 .footer {
     margin-left: 8rem;
     padding: 2rem 2rem;
@@ -69,4 +67,14 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
     background: var(--color-primary);
+}
+
+/////////////////////////
+// 404 Page
+.error404 {
+    background-image: url(../img/bg-error404.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
 }

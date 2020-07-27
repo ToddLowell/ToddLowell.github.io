@@ -1,6 +1,20 @@
+// also _utilities
+
 @mixin absCenter {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.center {
+    @include absCenter;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.mg-bt-sm {
+    margin-bottom: 1rem;
 }
